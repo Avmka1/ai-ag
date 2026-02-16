@@ -1,0 +1,28 @@
+Last login: Sun Feb 15 01:35:54 on ttys004
+viktoriasklarova@MacBook-Air-Viktoria ~ % 
+viktoriasklarova@MacBook-Air-Viktoria ~ % open -a TextEdit .env
+
+The file /Users/viktoriasklarova/.env does not exist.
+viktoriasklarova@MacBook-Air-Viktoria ~ % open -a TextEdit .env
+
+The file /Users/viktoriasklarova/.env does not exist.
+viktoriasklarova@MacBook-Air-Viktoria ~ % OPENAI_API_KEY=<REDACTED>
+
+
+viktoriasklarova@MacBook-Air-Viktoria ~ % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

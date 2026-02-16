@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+  <title>AI Agent Artem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>AI Agent Artem</h1>
+    </header>
+
+    <section id="settings-section">
+      <div class="field-row">
+        <label for="api-key-input">OpenAI API Key:</label>
+        <input type="password" id="api-key-input" placeholder="sk-...">
+        <button id="save-key-btn" class="btn-small">Save</button>
+        <span id="key-status" class="status-dot"></span>
+      </div>
+      <div class="field-row">
+        <label for="model-select">Model:</label>
+        <select id="model-select">
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="gpt-4o-mini">GPT-4o Mini</option>
+          <option value="gpt-4-turbo">GPT-4 Turbo</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="task-section">
+      <div class="field-row">
+        <label for="task-input">Task:</label>
+        <input type="text" id="task-input" placeholder="e.g., Go to google.com and search for 'weather in Moscow'">
+      </div>
+      <div class="button-row">
+        <button id="run-btn" class="btn-primary">&#9654; Run</button>
+        <button id="stop-btn" class="btn-danger" disabled>&#9632; Stop</button>
+      </div>
+    </section>
+
+    <section id="console-section">
+      <div class="console-header">
+        <span>Console</span>
+        <button id="clear-console-btn" class="btn-small">Clear</button>
+      </div>
+      <div id="console-output"></div>
+    </section>
+
+    <div id="user-prompt-modal" class="modal hidden">
+      <div class="modal-content">
+        <p id="user-prompt-question"></p>
+        <input type="text" id="user-prompt-input" placeholder="Your answer...">
+        <button id="user-prompt-submit" class="btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
